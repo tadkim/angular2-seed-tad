@@ -31,25 +31,70 @@ export class MapComponent{
         
         var cities = new L.LayerGroup(); // 기본 레이어그룹을 생성합니다.
         
+
+        // Scale : test
+        var radiusScale = d3.scaleLinear().range([8, 40]);
+
+
+
+
+        
         // D3를 활용하여 데이터를 바인딩 하는 부분입니다.  ======================================
         d3.tsv("app/map/map.data.tsv", function(error, dataset){
         
             if(error){ console.log("error"); }
             
             //데이터가 정상적으로 들어왔다면 아래 코드를 실행합니다
-            if(dataset){
+            if (dataset) {
+                dataset.forEach(function (d) {
                     
+                    //인명피해
+                    d.RESCUE = +d.RESCUE;      // 구조
+                    d.DEATH = +d.DEATH;        // 사망
+                    d.INJURY = +d.INJURY;      // 부상
+                    d.DISAPPER = +d.DISAPPER;  // 실종
+                    d.인명피해 = d.DEATH + d.INJURY + d.DISAPPER;  //인명피해 합계 
+
+                    //Maker Radius Scale
+                    radiusScale.domain([0, d3.max(dataset, function (datarow) {
+                        return datarow.인명피해;
+                    })]);
+                })
+                
+
+
                 dataset.forEach(function(d){
                     d.lat = +d.LAT; //위도
                     d.lon = +d.LON; //경도
                     
-                    let posInfo = "사고 발생위치 :  " + d.lat + ", " + d.lon + "입니다." +  "\n" +  "세부 위치: " + d.POS;
+                    var posInfo = "사고 발생위치 :  " + d.lat + ", " + d.lon + "입니다." +  "\n" +  "세부 위치: " + d.POS;
                     
+        
+        
+                    var myIcon = L.icon({
+                        iconUrl: "../assets/img/point_redpuple.png", //마커아이콘의 URL
+                        iconRetinaUrl: "../assets/img/point_redpuple.png", //마커아이콘의 URL
+                        // iconSize: [8, 8],  //마커아이콘의의 크기
+                        iconSize: [radiusScale(d.인명피해), radiusScale(d.인명피해)],  //마커아이콘의의 크기
+                        // iconAnchor: [27, 12],  //마커아이콘이 놓일 부분                    
+                        popupAnchor: [-13, 10] //팝업창의 중심 위치
+                    });
                     
+        
+                    
+                    //마커는 'cities'라는 이름의 레이어에 추가한다. 
+                    L.marker([d.lat, d.lon], { icon: myIcon, alt: d.lon, opacity:0.8})
+                    .bindPopup(posInfo)
+                    .addTo(cities); //마커는 'cities'라는 이름의 레이어에 추가한다. 
+                    
+                    /*
+                    //기본 팝업
                     L.marker([d.lat, d.lon])
                         .bindPopup(posInfo)
                         .addTo(cities);
-                });
+                    */
+
+                }); //forEach end
             }
         
         }); //d3.tsv end

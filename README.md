@@ -1,3 +1,26 @@
+# start
+---
+
+## 진행과정에서 알게된 것 & 복습하는 것 들
+---
+
+
+
+
+## libraries
+---
+- d3.js
+  - [d3.js Webpage](https://www.d3js.org)
+  - [d3.js npm](https://www.npmjs.com/package/d3)
+  - [d3.js cdn](https://cdnjs.cloudflare.com/ajax/libs/d3/4.2.6/d3.min.js)
+
+- leaflet.js & css
+  - [leaflet.js Webpage](http://leafletjs.com/)
+  - [leaflet.js tutorial](http://leafletjs.com/examples/quick-start/example.html)
+  - [leaflet.js cdn](https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.0.1/leaflet.js)
+  - [leaflet.css cdn](https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.0.1/leaflet.js)
+
+
 # Introduction
 
 [![Angular 2 Style Guide](https://mgechev.github.io/angular2-style-guide/images/badge.svg)](https://angular.io/styleguide)
