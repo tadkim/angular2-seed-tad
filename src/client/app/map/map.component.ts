@@ -9,7 +9,6 @@ import { Component } from '@angular/core';
     styles: [`
         #map{
             height:600px;
-            background-color:yellow;
         }
     `]
 })
@@ -29,7 +28,7 @@ export class MapComponent{
             mbUrl = 'https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token=pk.eyJ1IjoibWFwYm94IiwiYSI6ImNpandmbXliNDBjZWd2M2x6bDk3c2ZtOTkifQ._QA7i5Mpkd_m30IGElHziw';
         
         
-        var cities = new L.LayerGroup(); // 기본 레이어그룹을 생성합니다.
+        var markerLayer = new L.LayerGroup(); // 기본 레이어그룹을 생성합니다.
         
 
         // Scale : test
@@ -69,63 +68,47 @@ export class MapComponent{
                     
                     var posInfo = "사고 발생위치 :  " + d.lat + ", " + d.lon + "입니다." +  "\n" +  "세부 위치: " + d.POS;
                     
-        
-        
                     var myIcon = L.icon({
                         iconUrl: "../assets/img/point_redpuple.png", //마커아이콘의 URL
                         iconRetinaUrl: "../assets/img/point_redpuple.png", //마커아이콘의 URL
-                        // iconSize: [8, 8],  //마커아이콘의의 크기
-                        iconSize: [radiusScale(d.인명피해), radiusScale(d.인명피해)],  //마커아이콘의의 크기
+                        iconSize: [radiusScale(d.인명피해), radiusScale(d.인명피해)] //마커아이콘의의 크기
                         // iconAnchor: [27, 12],  //마커아이콘이 놓일 부분                    
-                        popupAnchor: [-13, 10] //팝업창의 중심 위치
+                        // popupAnchor: [-13, 10] //팝업창의 중심 위치
                     });
                     
-        
-                    
-                    //마커는 'cities'라는 이름의 레이어에 추가한다. 
+                        
+                    //마커를 markerLayer 레이어에 추가 
                     L.marker([d.lat, d.lon], { icon: myIcon, alt: d.lon, opacity:0.8})
-                    .bindPopup(posInfo)
-                    .addTo(cities); //마커는 'cities'라는 이름의 레이어에 추가한다. 
-                    
-                    /*
-                    //기본 팝업
-                    L.marker([d.lat, d.lon])
                         .bindPopup(posInfo)
-                        .addTo(cities);
-                    */
-
+                        .addTo(markerLayer);  
+                    
                 }); //forEach end
             }
         
         }); //d3.tsv end
-        // var overlays = { "Cities" : cities };
-        // cities.addTo(map);
-        
-        
-        
-        
+
         var grayscale   = L.tileLayer(mbUrl, {id: 'mapbox.light', attribution: mbAttr}),
-            streets  = L.tileLayer(mbUrl, {id: 'mapbox.streets',   attribution: mbAttr}),
             dark  = L.tileLayer(mbUrl, {id: 'mapbox.dark',   attribution: mbAttr});
         
         var map = L.map('map', {
             center: [37.6, 127.0],
             setView: [37.6, 127.0],
             zoom: 7,
-            layers: [dark, cities]
+            // layers: [dark, markerLayer]
+            layers: [markerLayer]
         });
         
         var baseLayers = {
             "Grayscale": grayscale,
-            "Streets": streets,
             "Dark": dark
         };
         
         var overlays = {
-            "Cities": cities
+            "markerLayer": markerLayer
         };
         
-        L.control.layers(baseLayers, overlays).addTo(map);
+        // L.control.layers(baseLayers, overlays).addTo(map);
+        L.control.layers(overlays).addTo(map); //지도가아닌, 지도컨트롤 기능에 추가할 요소들을 말한다.
         
     }
 }
