@@ -7,7 +7,7 @@ export class AccidentService{
         return  Observable.of ([
             {
                 name: '2014년',
-                accidents: [{
+                accident: [{
                     weather: "양호",
                     name: '테스트1',
                     death: 100
@@ -15,7 +15,7 @@ export class AccidentService{
             },
             {
                 name: '2014년 테스트1',
-                accidents: [{
+                accident: [{
                     weather: "태풍주의보",
                     name: '테스트2',
                     death: 10
