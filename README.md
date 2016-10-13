@@ -1,11 +1,9 @@
-# start
+# STUCKYI STUDIO SMALL PROJECT
 ---
+- 2016. 10. 5~
 
 ## 진행과정에서 알게된 것 & 복습하는 것 들
 ---
-
-
-
 
 ## libraries
 ---
