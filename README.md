@@ -154,6 +154,9 @@
 
 
 
+
+
+
 <br/><br/><br/> 
  ### 콘텐츠 세부 스타일 참고
 ---
@@ -202,6 +205,10 @@
 - [VerginAmerica Home](https://www.virginamerica.com/)
 
 
+10. Google Wallet
+
+- [Google Wallet Home](https://www.google.com/wallet/)
+- ![Google Wallet Home](https://getmdl.io/assets/showcase/wallet_2x.jpg)
 <br/><br/><br/> 
 
 ## 콘텐츠 스토리텔링 참고
@@ -229,12 +236,61 @@
   - 차트하단 슬라이드바를 드래그하면 해당데이터 기준으로 다시 막대차트가 그려진다.
   - 동일한 형태의 차트를 각각 다른 내용에 대해 적용함으로써 사용자의 학습부담을 낮춘다.
 
+4. TEAMPOPONG
+- [TEAMPOPONG Home](http://popong.com/)
+
+
+<br/><br/><br/>
+
+## 관련 시각화 소스
+---
+- [팀포퐁, 19대 국회 지역구 지도](http://bl.ocks.org/minsukkahng/79c06b46ae545d1fbdf6297bd283b7d3)
+
+### mbostock, d3
+
+
+- [ZoomDomain](http://bl.ocks.org/mbostock/431a331294d2b5ddd33f947cf4c81319)
+- [Constrained Zoom](http://bl.ocks.org/mbostock/5e81cc677d186b6845cb00676758a339)
+	![Constrained Zoom](./img/contrainedZoom.png)
+
+- [Zoom and click](http://bl.ocks.org/mbostock/35964711079355050ff1)
+- [Zoom to bounding bpx](http://bl.ocks.org/mbostock/9656675)
+- [Fit Extent](http://bl.ocks.org/mbostock/19ffece0a45434b0eef3cc4f973d1e3d)
+- [Brush & Zoom](http://bl.ocks.org/mbostock/34f08d5e11952a80609169b7917d4172)
+
+- [Map Zooming](http://bl.ocks.org/mbostock/6301872)
+- [Map Zoooming 2](http://bl.ocks.org/mbostock/6301817)
+
+
+- [Drag and Zoom](http://bl.ocks.org/mbostock/6123708)
+- [Rester nad Vector 3](http://bl.ocks.org/mbostock/5914438)
+
+
+
+- [Topojson Layer](http://bl.ocks.org/mbostock/5707818)
+- [Topojson Point](http://bl.ocks.org/mbostock/4408297)
+- [U.S Airport Voronoi](http://bl.ocks.org/mbostock/4360892)
+
+- [Custom Projection](http://bl.ocks.org/mbostock/5663666)
+- [Projecto to Bounding box](http://bl.ocks.org/mbostock/4707858)
+- [Symbolmap](http://bl.ocks.org/mbostock/4342045)
+- [Bivariate Hexnim map](http://bl.ocks.org/mbostock/4330486)
+- [Area Choropleth](http://bl.ocks.org/mbostock/4206573)
+- [Zoomable MapTiles](http://bl.ocks.org/mbostock/4132797)
+
+
+- [Fisheye Grid](http://bl.ocks.org/mbostock/2962761)
+- [Rectilinear Grid](http://bl.ocks.org/mbostock/2962888)
+- [get BBOX](http://bl.ocks.org/mbostock/1160929)
+
+- [Force Layout Multiples(Independent)](http://bl.ocks.org/mbostock/1804889)
+- [Multi-Forci Force Layout](http://bl.ocks.org/mbostock/1249681)
 
 
 
 
 <br/><br/><br/> 
- ## Style Guide Docs
+## Style Guide Docs
 ---
 - [apple ios human interface guidelines](https://developer.apple.com/ios/human-interface-guidelines/)
 
@@ -526,3 +582,16 @@ __<표 7> 여객선 사고사례의 분석__
 
 
 ---
+
+
+## 데이터 정제
+---
+-[marineAccident data 2014년 33번 row](https://docs.google.com/spreadsheets/d/1uFz8c28YrGnDw7_y-B-tVo7sbwW326jbpeiK7EgMjmE/edit#gid=1825809774)
+
+
+  - 위도 경도 바꿔서 입력.
+20140110	20140110 13:28	통영	항계내	해양오염	기타	어선	양호	경남 거제시 장승포동 장승포 항 내 파플소 앞 해상	1	0	0	0	0	128	44	7	34	52	0	128.73528	34.86667	128|44|07	34|52|00
+
+128	44	7	34	52	0
+
+- [수정 후]()
