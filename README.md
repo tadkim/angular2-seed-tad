@@ -192,6 +192,7 @@
 
 6. Netflix
 - [Netflix Home](https://www.netflix.com/browse)
+- [Netflix Design Site img](https://www.behance.net/gallery/42888633/New-Concept-Netflix-App)
 
 7. Airbnb
 - [Airbnb Home](https://www.airbnb.co.kr/)
@@ -211,7 +212,79 @@
 - ![Google Wallet Home](https://getmdl.io/assets/showcase/wallet_2x.jpg)
 <br/><br/><br/> 
 
+11. The Guardian Digital News paper
+- [The Guardian Home](https://www.behance.net/gallery/41239763/theguardian-Digital-Newspaper)
+![](https://mir-s3-cdn-cf.behance.net/project_modules/1400/e27f9541239763.57a1311555059.jpg)
+![](https://mir-s3-cdn-cf.behance.net/project_modules/1400/0cda3e41239763.57a3c0c785012.jpg)
+
+12. 기타 레이아웃
+![dribbble.com/shots/2453253-Day-63-Best-Of-2015](https://d13yacurqjgara.cloudfront.net/users/48670/screenshots/2453253/day_63_-_best_of_2015.png)
+![dribbble.com/shots/2470984-Day-68-Flight-Search](https://d13yacurqjgara.cloudfront.net/users/48670/screenshots/2470984/day_68_-_flight_search.png)
+
+13. 랜덤 색상 사이트
+- [랜덤색상사이트 Home](http://colovely.nofach.com/#hex=576db0)
+
+14. Behace
+- [Behance Interaction design](https://www.behance.net/galleries/8/Interaction)
+
+15. IT CONFERENCE
+- [IT CONFERENCE Home](https://www.behance.net/gallery/38580221/IT-Conference)
+![](https://mir-s3-cdn-cf.behance.net/project_modules/1400/93a2ec38580221.5767a645ce18a.jpg)
 ## 콘텐츠 스토리텔링 참고
+
+16. Áureo – Digital Newspaper
+- [Áureo – Digital Newspaper Home](https://www.behance.net/gallery/41511555/Aureo-Digital-Newspaper)
+![Áureo – Digital Newspaper](https://mir-s3-cdn-cf.behance.net/project_modules/1400/16a8eb41511555.57a939b3ec89a.jpg)
+![Áureo – Digital Newspaper](https://mir-s3-cdn-cf.behance.net/project_modules/1400/d3621d41511555.57a93c4b4b071.jpg)
+![Áureo – Digital Newspaper](https://mir-s3-cdn-cf.behance.net/project_modules/1400/c87a9341511555.57a939b3f2f93.jpg)
+![Áureo – Digital Newspaper](https://mir-s3-cdn-cf.behance.net/project_modules/1400/169bf041511555.57a93c4b4b69c.jpg)
+
+
+17. Donskoy
+- [Donskoy dribble](https://www.behance.net/gallery/40156915/Donskoy)
+![](https://mir-s3-cdn-cf.behance.net/project_modules/1400/e162bb40156915.57740ddd78951.jpg)
+
+
+
+18. Muji
+- [Muji Home](https://www.behance.net/gallery/35662475/MUJI-icon)
+![Muji Icon set](https://mir-s3-cdn-cf.behance.net/project_modules/1400/82b14935662475.56ffecd6c4fe6.gif)
+
+
+
+19. Apollo 11
+- [Apollo 11 Dribble](https://mir-s3-cdn-cf.behance.net/project_modules/1400/ef9bd640182607.577505dc69871.png)
+![Apollo 11](https://mir-s3-cdn-cf.behance.net/project_modules/1400/ef9bd640182607.577505dc69871.png)
+
+
+20. Seoul
+- [Seoul behance](https://www.behance.net/gallery/38153295/Seoul-WordPress-Theme)
+![](https://mir-s3-cdn-cf.behance.net/project_modules/1400/e1c78d38153295.5757485a9c35d.jpg)
+![](https://mir-s3-cdn-cf.behance.net/project_modules/1400/e1c78d38153295.5757485a9c35d.jpg)
+
+
+21. Bold Leads Landing Pages
+- [Bold Leads Landing Pages Behace](https://www.behance.net/gallery/38835365/Bold-Leads-Landing-Pages)
+![](https://mir-s3-cdn-cf.behance.net/project_modules/1400/ad36fa38835365.5771457269c21.png)
+![](https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/f3d23938835365.577145726a362.png)
+![](https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/31eda338835365.577145726a8e5.png)
+![](https://mir-s3-cdn-cf.behance.net/project_modules/1400/520b5a38835365.577145726afae.png)
+
+22. Arthur Chichikin
+- [Arthur Chichikin behance](https://www.behance.net/gallery/40098337/Arthur-Chichikin)
+![](https://mir-s3-cdn-cf.behance.net/project_modules/1400/e0ec8040098337.57933ca0727d9.jpg)
+![](https://mir-s3-cdn-cf.behance.net/project_modules/1400/e0ec8040098337.57933ca0727d9.jpg)
+![](https://mir-s3-cdn-cf.behance.net/project_modules/1400/244b0d40098337.57933ca072fd5.jpg)
+
+23. UI Experiment
+- [UI Experiment Behance](https://www.behance.net/gallery/37093523/UI-Experiments)
+![](https://mir-s3-cdn-cf.behance.net/project_modules/1400/38ded937093523.573dbf246c176.gif)
+
+
+
+24. VSTEC corporate web-site
+- [VSTEC corporate web-siteHome](https://www.behance.net/gallery/37918951/VSTEC-corporate-web-site)
+![](https://mir-s3-cdn-cf.behance.net/project_modules/1400/a9895c37918951.57505664072b3.png)
 ---
 
 
@@ -254,6 +327,7 @@
 	![Constrained Zoom](./img/contrainedZoom.png)
 
 - [Zoom and click](http://bl.ocks.org/mbostock/35964711079355050ff1)
+- [mousewheel-zoom + click-to-center](http://bl.ocks.org/mbostock/2206340)
 - [Zoom to bounding bpx](http://bl.ocks.org/mbostock/9656675)
 - [Fit Extent](http://bl.ocks.org/mbostock/19ffece0a45434b0eef3cc4f973d1e3d)
 - [Brush & Zoom](http://bl.ocks.org/mbostock/34f08d5e11952a80609169b7917d4172)
@@ -287,6 +361,8 @@
 - [Multi-Forci Force Layout](http://bl.ocks.org/mbostock/1249681)
 
 
+### not bostock
+- [Click to zoom with table and map in d3](http://bl.ocks.org/phil-pedruco/7557092)
 
 
 <br/><br/><br/> 
